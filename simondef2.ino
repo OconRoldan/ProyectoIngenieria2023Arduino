@@ -135,14 +135,14 @@ void procesarError() {
   digitalWrite(LED4, LOW);
   delay(250);
   reiniciar();
-  Serial.println("¡Fallaste! Fin de la partida.");
+  Serial.println("¡Fallaste! Inténtalo de nuevo.");
 }
 
 void procesarCorrecto() {
   InitialLevel++;
   Speed -= 50;
   Score++;
-  delay(200); 
+  delay(200);
 
   if (InitialLevel >= MaxLevel) {
     reiniciar();
